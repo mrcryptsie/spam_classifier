@@ -41,7 +41,7 @@ st.title("Plateforme Web de Classification des SMS et Mails")
 
 st.title("Conçue par Lucien TITO, Dev AI")
 
-input_sms = st.text_area("Entrez votre message en anglais à priori. Ceci étant, merci bien de traduire vos message français en anglais sur google translate ou deepl etc... le tant que la version multilingue de l'application soit disponible.")
+input_sms = st.text_area("Entrez votre message en anglais à priori. Ceci étant, merci bien de traduire vos message français en anglais sur google translate ou deepl etc... le temps que la version multilingue de l'application soit disponible.")
 
 if st.button('Prédire'):
 
