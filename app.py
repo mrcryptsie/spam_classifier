@@ -39,7 +39,9 @@ model = pickle.load(open('model.pkl','rb'))
 
 st.title("Plateforme Web de Classification des SMS et Mails")
 
-input_sms = st.text_area("Entrez votre message en anglais à priori")
+st.title("Conçue par Lucien TITO, Dev AI")
+
+input_sms = st.text_area("Entrez votre message en anglais à priori. Ceci étant, merci bien de traduire vos message français en anglais sur google translate ou deepl etc... le tant que la version multilingue de l'application soit disponible.")
 
 if st.button('Prédire'):
 
@@ -51,6 +53,6 @@ if st.button('Prédire'):
     result = model.predict(vector_input)[0]
     # 4. Display
     if result == 1:
-        st.header("Spam")
+        st.header("Il s'agit d'un Spam")
     else:
-        st.header("Not Spam")
+        st.header("Ce message n'est pas un Spam")
